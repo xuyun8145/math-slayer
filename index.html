@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>数学鬼杀队 Online — 茜茜×炭治郎 全学段数学冒险</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="particles"></div>
+
+<!-- ===== 开始屏 ===== -->
+<div id="screen-start" class="screen active">
+  <div class="title-wrap">
+    <div class="title-jp">鬼 滅 之 刃 × 数 学 道 场 · ONLINE</div>
+    <div class="title-main">数学鬼杀队</div>
+    <div class="title-sub">茜茜 × 炭治郎 · 一年级到六年级 · 小升初 · 奥数拔高</div>
+  </div>
+  <div class="hero-art">
+    <svg viewBox="0 0 340 290" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="270" cy="45" r="32" fill="none" stroke="#f1c40f" stroke-width="2" opacity="0.6"/>
+      <circle cx="282" cy="37" r="27" fill="#0a0a1a"/>
+      <ellipse cx="60" cy="80" rx="8" ry="4" fill="rgba(255,182,193,0.5)" transform="rotate(-30,60,80)"/>
+      <ellipse cx="290" cy="120" rx="6" ry="3" fill="rgba(255,182,193,0.4)" transform="rotate(20,290,120)"/>
+      <ellipse cx="170" cy="268" rx="120" ry="12" fill="rgba(150,50,50,0.3)"/>
+      <path d="M 60,210 Q 170,170 280,210" stroke="rgba(200,200,255,0.25)" stroke-width="2" fill="none"/>
+      <!-- 茜茜（左） -->
+      <rect x="62" y="162" width="40" height="58" rx="6" fill="#c0587a"/>
+      <rect x="60" y="198" width="44" height="10" rx="3" fill="#8b2045"/>
+      <path d="M72,203 L62,197 L72,203 L62,209 Z" fill="#ff8fab"/>
+      <path d="M92,203 L102,197 L92,203 L102,209 Z" fill="#ff8fab"/>
+      <circle cx="82" cy="203" r="4" fill="#ff8fab"/>
+      <rect x="66" y="220" width="14" height="38" rx="4" fill="#2c1a2e"/>
+      <rect x="86" y="220" width="14" height="38" rx="4" fill="#2c1a2e"/>
+      <ellipse cx="73" cy="259" rx="11" ry="5" fill="#1a0a1a"/>
+      <ellipse cx="93" cy="259" rx="11" ry="5" fill="#1a0a1a"/>
+      <circle cx="82" cy="148" r="24" fill="#f5d5b0"/>
+      <path d="M58,140 Q64,110 82,118 Q100,110 106,140" fill="#8b4a3c"/>
+      <path d="M58,148 Q48,168 52,200 Q56,220 58,240" stroke="#8b4a3c" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M106,148 Q116,168 112,200 Q108,220 106,240" stroke="#8b4a3c" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <ellipse cx="82" cy="128" rx="14" ry="5" fill="#ff6b9d"/>
+      <ellipse cx="74" cy="150" rx="5" ry="6.5" fill="white"/>
+      <ellipse cx="90" cy="150" rx="5" ry="6.5" fill="white"/>
+      <circle cx="74" cy="151" r="4" fill="#6a3a8a"/>
+      <circle cx="90" cy="151" r="4" fill="#6a3a8a"/>
+      <circle cx="75" cy="150" r="1.8" fill="black"/>
+      <circle cx="91" cy="150" r="1.8" fill="black"/>
+      <ellipse cx="66" cy="157" rx="6" ry="3" fill="rgba(255,150,150,0.35)"/>
+      <ellipse cx="98" cy="157" rx="6" ry="3" fill="rgba(255,150,150,0.35)"/>
+      <text x="82" y="280" font-size="11" fill="#ff8fab" text-anchor="middle" font-weight="bold">茜茜</text>
+      <!-- 炭治郎（右） -->
+      <rect x="198" y="160" width="44" height="60" rx="6" fill="#1a6040"/>
+      <path d="M198,170 L242,170" stroke="#27ae60" stroke-width="1.5" opacity="0.6"/>
+      <path d="M198,180 L242,180" stroke="#27ae60" stroke-width="1.5" opacity="0.6"/>
+      <rect x="196" y="198" width="48" height="12" rx="3" fill="#8B4513"/>
+      <rect x="200" y="220" width="16" height="40" rx="4" fill="#2c3e50"/>
+      <rect x="224" y="220" width="16" height="40" rx="4" fill="#2c3e50"/>
+      <ellipse cx="208" cy="261" rx="12" ry="5" fill="#1a1a1a"/>
+      <ellipse cx="232" cy="261" rx="12" ry="5" fill="#1a1a1a"/>
+      <circle cx="220" cy="148" r="26" fill="#e8c99a"/>
+      <path d="M194,138 Q200,112 220,118 Q240,112 246,138" fill="#1a1a1a"/>
+      <ellipse cx="211" cy="150" rx="5" ry="6" fill="white"/>
+      <ellipse cx="229" cy="150" rx="5" ry="6" fill="white"/>
+      <circle cx="211" cy="151" r="3.5" fill="#c0392b"/>
+      <circle cx="229" cy="151" r="3.5" fill="#c0392b"/>
+      <path d="M214,138 Q218,133 222,138" stroke="#c0392b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <circle cx="194" cy="155" r="4" fill="#f1c40f" stroke="#d4ac0d" stroke-width="1"/>
+      <text x="220" y="280" font-size="11" fill="#7ecfad" text-anchor="middle" font-weight="bold">炭治郎</text>
+      <text x="170" y="230" font-size="16" text-anchor="middle" fill="rgba(241,196,15,0.7)">🤝</text>
+      <text x="10" y="200" font-size="15" fill="rgba(255,150,200,0.6)">∑</text>
+      <text x="5" y="230" font-size="12" fill="rgba(200,200,100,0.55)">3.14</text>
+      <text x="310" y="100" font-size="16" fill="rgba(241,196,15,0.7)" font-weight="bold">×</text>
+    </svg>
+  </div>
+  <div class="story-intro">
+    <strong>📜 故事背景</strong><br>
+    鬼舞辻无惨将数学王国的知识碎片散落各地，从<strong>一年级到六年级</strong>，每一个年级都隐藏着数字鬼魔……<br><br>
+    勇敢的少女<strong>茜茜</strong>与好伙伴<strong>炭治郎</strong>决心一起踏上漫长的数学修行之路！掌握全部秘术，<strong>小升初难关</strong>、<strong>奥数拔高</strong>也不在话下！<br><br>
+    <strong>💫 8大年级段 · 70+关卡 · 500+道题 · 全覆盖</strong>
+  </div>
+  <div class="start-btns">
+    <button class="btn-start" onclick="showGradeSelect()">⚔️ 茜茜出发！</button>
+    <button class="btn-secondary-start" onclick="showRanking()">🏆 排行榜</button>
+  </div>
+  <div class="online-badge">🌐 Online版 · 进度云同步</div>
+</div>
+
+<!-- ===== 年级选择屏 ===== -->
+<div id="screen-grade" class="screen">
+  <div class="grade-header">
+    <button class="btn-back" onclick="showScreen('screen-start')">← 返回</button>
+    <h2>选择年级段</h2>
+    <p>茜茜的修炼之路从这里开始！</p>
+  </div>
+  <div class="grade-grid" id="grade-grid"></div>
+  <div class="grade-special-title">✨ 挑战模式</div>
+  <div class="grade-grid" id="grade-special-grid"></div>
+</div>
+
+<!-- ===== 章节地图屏 ===== -->
+<div id="screen-map" class="screen">
+  <div class="map-header">
+    <div class="player-avatar">🌸</div>
+    <div class="player-info">
+      <div class="player-name" id="player-name-display">茜茜</div>
+      <div class="player-level" id="player-level-display">初级队士 · Lv.1</div>
+    </div>
+    <div class="header-stats">
+      <div class="stat-item">⭐<span id="hdr-stars">0</span></div>
+      <div class="stat-item">💎<span id="hdr-gems">0</span></div>
+    </div>
+    <button class="btn-back-sm" onclick="showGradeSelect()">← 年级</button>
+  </div>
+  <div class="map-title" id="map-title">🗺️ 茜茜的冒险地图</div>
+  <div class="stage-list" id="stage-list"></div>
+</div>
+
+<!-- ===== 战斗屏 ===== -->
+<div id="screen-battle" class="screen">
+  <div class="battle-header">
+    <button class="btn-back-sm" onclick="confirmQuit()">✕ 退出</button>
+    <div class="stage-info" id="battle-stage-info">关卡 1</div>
+    <div class="battle-progress">
+      <span id="q-progress">1/5</span>
+    </div>
+  </div>
+  <div class="battle-arena">
+    <!-- 敌人 -->
+    <div class="combatant enemy-side">
+      <div class="combatant-art" id="enemy-art">👺</div>
+      <div class="hp-display">
+        <div class="hp-text">
+          <span id="enemy-name">算法鬼</span>
+          <span id="enemy-hp-val">100</span>/<span id="enemy-hp-max">100</span>
+        </div>
+        <div class="hp-bar-battle"><div class="bar-fill bar-enemy" id="enemy-hp-bar" style="width:100%"></div></div>
+      </div>
+    </div>
+    <!-- 玩家 -->
+    <div class="combatant player-side">
+      <div class="combatant-art" id="player-art">🌸</div>
+      <div class="hp-display">
+        <div class="hp-text">
+          茜茜 <span id="player-hp-val">100</span>/<span id="player-hp-max">100</span>
+        </div>
+        <div class="hp-bar-battle"><div class="bar-fill bar-hp" id="player-hp-bar" style="width:100%"></div></div>
+      </div>
+      <div class="combatant-name">茜茜 &amp; 炭治郎</div>
+    </div>
+  </div>
+  <!-- 呼吸值 -->
+  <div class="breath-bar-wrap">
+    <div class="breath-label">🌸 花之呼吸</div>
+    <div class="breath-bar-bg"><div class="breath-bar-fill" id="breath-bar" style="width:0%"></div></div>
+    <span id="breath-val">0%</span>
+  </div>
+  <button class="btn-skill" id="btn-skill" onclick="useSkill()" disabled>🌸 茜茜·花之呼吸（消除1题）</button>
+  <!-- 题目区 -->
+  <div class="question-box" id="question-box">
+    <div class="q-topic" id="q-topic"></div>
+    <div class="q-text" id="q-text"></div>
+    <div class="q-options" id="q-options"></div>
+    <div class="q-input-wrap" id="q-input-wrap" style="display:none">
+      <input type="text" id="q-input" placeholder="输入答案" oninput="onInputChange()" autocomplete="off">
+      <button id="btn-submit" onclick="submitAnswer()" disabled>确认</button>
+    </div>
+  </div>
+  <div class="battle-log" id="battle-log"></div>
+  <!-- 解析框 -->
+  <div class="solution-box" id="solution-box" style="display:none">
+    <div class="solution-title" id="sol-title"></div>
+    <div class="solution-text" id="sol-text"></div>
+    <button class="btn-next" id="btn-next" onclick="nextQuestion()">下一题 →</button>
+  </div>
+</div>
+
+<!-- ===== 结果屏 ===== -->
+<div id="screen-result" class="screen">
+  <div class="result-art" id="result-art">🌸</div>
+  <div class="result-title" id="result-title">茜茜胜利！</div>
+  <div class="result-stars" id="result-stars">★★★</div>
+  <div class="result-story" id="result-story"></div>
+  <div class="result-stats">
+    <div class="stat-row"><span>答对</span><span id="res-correct">0</span></div>
+    <div class="stat-row"><span>总题数</span><span id="res-total">0</span></div>
+    <div class="stat-row"><span>正确率</span><span id="res-score">0%</span></div>
+  </div>
+  <div class="result-rewards" id="result-rewards"></div>
+  <div class="result-btns">
+    <button class="btn-secondary" onclick="retryStage()">🔄 茜茜再战</button>
+    <button class="btn-primary" onclick="goToMap()">🗺️ 返回地图</button>
+  </div>
+</div>
+
+<!-- ===== 排行榜屏 ===== -->
+<div id="screen-ranking" class="screen">
+  <div class="grade-header">
+    <button class="btn-back" onclick="showScreen('screen-start')">← 返回</button>
+    <h2>🏆 冒险排行榜</h2>
+    <p>茜茜的成长记录</p>
+  </div>
+  <div id="ranking-content" class="ranking-wrap"></div>
+</div>
+
+<!-- 飘字特效容器 -->
+<div id="float-effects"></div>
+
+<script src="data.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
